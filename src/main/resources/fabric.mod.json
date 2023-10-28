@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "despawner",
+  "version": "${version}",
+  "name": "Despawner",
+  "description": "Despawn hostile mob in within the area.",
+  "authors": [
+    "SJKZ1"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/despawner/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "sjkz1.com.despawner.client.DespawnerClient"
+    ],
+    "main": [
+      "sjkz1.com.despawner.Despawner"
+    ]
+  },
+  "mixins": [
+    "despawner.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
